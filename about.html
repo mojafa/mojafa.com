@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Jafa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="name">Mohamed Jaafar</h1>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="resume.html" class="nav-link">Resume</a>
+                <a href="https://x.com/mo_jafa" class="nav-link" target="_blank" rel="noopener noreferrer">Twitter</a>
+                <a href="mailto:jmohsa@gmail.com" class="nav-link">Email</a>
+                <a href="https://www.linkedin.com/in/mo-jafa/" class="nav-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/mojafa" class="nav-link" target="_blank" rel="noopener noreferrer">Github</a>
+                <a href="https://goodreads.com/jafaa" class="nav-link" target="_blank" rel="noopener noreferrer">Goodreads</a>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!-- About Section -->
+            <section id="about" class="section">    
+                <div class="about-content">
+                    <div class="about-header">
+                        <img src="photo_id.jpeg" alt="Mohamed Jaafar" class="profile-photo">
+                        <div class="about-text">
+                            <p>My name is Mohamed Jaafar.</p>
+                            
+                            <p>I'm a product-minded backend engineer and founder building the rails for ethical finance. I write Go for almost everything backend: clean boundaries (hexagonal), event-driven messaging, secure auth, and data pipelines that tell the truth about the product.</p>
+                            
+                            <p>I'm currently based in London, pursuing an MSc in Financial Technology and building <strong>Fifi</strong> — an AI-native, Shariah-aligned personal finance platform. Fifi brings accounts, compliant investing, savings goals, and Zakat/Sadaqah into one place, with screening and impact reporting built-in. The vision is bigger than an app: an ecosystem where finance is understandable, automatable, and aligned with values.</p>
+                        </div>
+                    </div>
+                    
+                    <p>Previously, I led at Fingo Africa on Cards, Auth, and an AI microservice for personalized support. I increased scalability and reliability (99.9% uptime) while reducing production errors through proactive observability. Built microservices for payments and digital banking, plus data dashboards (100+ KPIs) used to guide growth. Designed integrations across KYC/KYB, card processors, and open-banking partners.</p>
+                    
+                    <p>I've shipped customs and billing microservices for enterprise workflows (RabbitMQ, Redis, Postgres), created event streams for onboarding/payments/commissions, and built analytics you can actually act on (PostHog, Metabase). I like owning the loop: architecture → implementation → instrumentation → feedback → iteration.</p>
+                    
+                    <p>Tech I reach for: Go, gRPC/REST, PostgreSQL, RabbitMQ/Redis, Docker/Kubernetes on AWS, IaC and CI/CD, Grafana/Prometheus, and occasionally TigerBeetle for high-integrity ledgers. On the product side: clear SRS/PRDs, fast vertical slices, and metrics that map to user happiness and regulatory safety.</p>
+                    
+                    <p>My compass: ship useful things, keep users safe, measure honestly, and make money make sense — especially for communities that need transparent, halal options. If you're building in open banking, payments, or responsible investing (conventional or Islamic), I'm always up for a deep technical chat or a fast prototype.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Mo❤️. Built with curiosity and caffeine.</p>
+        </footer>
+        
+        <button class="theme-toggle" id="themeToggle">🌙</button>
+    </div>
+
+    <script src="goodreads-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

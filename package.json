@@ -1,0 +1,13 @@
+{
+  "name": "mojafa-portfolio",
+  "version": "1.0.0",
+  "description": "Mohamed Jaafar Portfolio Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000"
+  },
+  "keywords": ["portfolio", "essays", "personal-website"],
+  "author": "Mohamed Jaafar",
+  "license": "MIT"
+}

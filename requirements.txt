@@ -1,3 +1,0 @@
-# Mohamed Jaafar Portfolio Requirements
-# Simple static site hosting - no external dependencies needed
-# Python 3.11+ built-in modules are sufficient

@@ -1,3 +1,0 @@
-#!/bin/bash
-# Start the web server
-python -m http.server 8000

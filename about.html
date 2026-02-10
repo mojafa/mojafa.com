@@ -3,62 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Jafa</title>
+    <title>About — Jafa</title>
+    <meta name="description" content="Mohamed Jaafar. Backend engineer, founder, building ethical finance infrastructure.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <h1 class="name">Mohamed Jaafar</h1>
             <nav class="nav">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link active">About</a>
-                <a href="https://x.com/mo_jafa" class="nav-link" target="_blank" rel="noopener noreferrer">Twitter</a>
-                <a href="mailto:jmohsa@gmail.com" class="nav-link">Email</a>
-                <a href="https://www.linkedin.com/in/mo-jafa/" class="nav-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://github.com/mojafa" class="nav-link" target="_blank" rel="noopener noreferrer">Github</a>
-                <a href="https://goodreads.com/jafaa" class="nav-link" target="_blank" rel="noopener noreferrer">Goodreads</a>
-                <a href="https://paragon-web-production.up.railway.app/" class="nav-link" target="_blank" rel="noopener noreferrer">Paragon Terminal</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="writing.html" class="nav-link">Writing</a>
             </nav>
         </header>
 
         <main class="main">
-            <!-- About Section -->
-            <section id="about" class="section">    
-                <div class="about-content">
-                    <div class="about-header">
-                        <img src="photo_id.jpeg" alt="Mohamed Jaafar" class="profile-photo">
-                        <div class="about-text">
-                            <p>My name is Mohamed Jaafar.</p>
-                            
-                            <p>I'm a product-minded backend engineer and founder building the rails for ethical finance. I write Go for almost everything backend: clean boundaries (hexagonal), event-driven messaging, secure auth, and data pipelines that tell the truth about the product.</p>
-                            
-                            <p>I'm currently based in London, pursuing an MSc in Financial Technology and building <strong>Fifi</strong> — an AI-native, Shariah-aligned personal finance platform. Fifi brings accounts, compliant investing, savings goals, and Zakat/Sadaqah into one place, with screening and impact reporting built-in. The vision is bigger than an app: an ecosystem where finance is understandable, automatable, and aligned with values.</p>
-                        </div>
+            <section class="about-page">
+                <div class="about-intro">
+                    <img src="photo_id.jpeg" alt="Mohamed Jaafar" class="about-photo">
+                    <div class="about-intro-text">
+                        <h1>Mohamed Jaafar</h1>
+                        <p class="about-one-liner">I build financial tools for people the system forgot.</p>
                     </div>
-                    
-                    <p>Previously, I led at Fingo Africa on Cards, Auth, and an AI microservice for personalized support. I increased scalability and reliability (99.9% uptime) while reducing production errors through proactive observability. Built microservices for payments and digital banking, plus data dashboards (100+ KPIs) used to guide growth. Designed integrations across KYC/KYB, card processors, and open-banking partners.</p>
-                    
-                    <p>I've shipped customs and billing microservices for enterprise workflows (RabbitMQ, Redis, Postgres), created event streams for onboarding/payments/commissions, and built analytics you can actually act on (PostHog, Metabase). I like owning the loop: architecture → implementation → instrumentation → feedback → iteration.</p>
-                    
-                    <p>Tech I reach for: Go, gRPC/REST, PostgreSQL, RabbitMQ/Redis, Docker/Kubernetes on AWS, IaC and CI/CD, Grafana/Prometheus, and occasionally TigerBeetle for high-integrity ledgers. On the product side: clear SRS/PRDs, fast vertical slices, and metrics that map to user happiness and regulatory safety.</p>
-                    
-                    <p>My compass: ship useful things, keep users safe, measure honestly, and make money make sense — especially for communities that need transparent, halal options. If you're building in open banking, payments, or responsible investing (conventional or Islamic), I'm always up for a deep technical chat or a fast prototype.</p>
+                </div>
+
+                <div class="about-body">
+                    <h2>The Short Version</h2>
+                    <p>Backend engineer. Founder. MSc Financial Technology (London). Building <a href="https://tryfifi.com" class="inline-link">Fifi Terminal</a> — Bloomberg for emerging markets.</p>
+                    <p>I write Go, ship microservices, and care deeply about ethical finance — specifically, making financial infrastructure that's Shariah-compliant, transparent, and actually accessible.</p>
+
+                    <h2>The Longer Version</h2>
+                    <p>I started trading forex at 18. Got wrecked. Learned. Kept going.</p>
+                    <p>That experience taught me two things: (1) financial literacy is a privilege, not a default, and (2) the tools that exist for retail traders — especially in Africa and the Middle East — are garbage.</p>
+                    <p>So I started building. First at fintechs in East Africa — <strong>Fingo Africa</strong> and others — shipping payment rails, card systems, KYC integrations, and AI support bots. I got obsessed with uptime (99.9%), with event-driven architectures that actually scale, with dashboards that tell the truth.</p>
+                    <p>Now I'm building my own thing. <strong><a href="https://tryfifi.com" class="inline-link">Fifi Terminal</a></strong> is the market intelligence tool I wished existed — real-time data on African and MENA markets, news with sentiment analysis, AI research assistant. <strong><a href="https://zabili.com" class="inline-link">Zabili</a></strong> is prediction markets done right — Rust matching engine, on-chain settlement.</p>
+                    <p>I also care about Islamic finance. Not as a niche, but as a lens: what would financial infrastructure look like if it was built from first principles around transparency, fairness, and no riba (interest)? That's what I'm exploring with <strong>Habib</strong> (halal investing + Zakat automation) and <strong>Golum Screener</strong> (Shariah + ESG screening for global equities).</p>
+
+                    <h2>How I Work</h2>
+                    <ul class="about-list">
+                        <li><strong>Tech:</strong> Go (primary), gRPC/REST, PostgreSQL, RabbitMQ, Redis, Docker/K8s on AWS. Occasionally Rust, Python, Next.js.</li>
+                        <li><strong>Style:</strong> Hexagonal architecture. Event-driven. Observability from day one (Grafana, Prometheus, PostHog).</li>
+                        <li><strong>Philosophy:</strong> Ship useful things. Keep users safe. Measure honestly. Learn in public.</li>
+                    </ul>
+
+                    <h2>Currently</h2>
+                    <ul class="about-list">
+                        <li>MSc Financial Technology — London</li>
+                        <li>Building Fifi Terminal</li>
+                        <li>Writing more (trying to, anyway)</li>
+                        <li>Reading: check <a href="https://goodreads.com/jafaa" class="inline-link" target="_blank" rel="noopener">Goodreads</a></li>
+                    </ul>
+
+                    <h2>Get in Touch</h2>
+                    <p>I like talking to people building interesting things — especially in payments, open banking, ethical finance, or AI-native products.</p>
+                    <div class="about-contact">
+                        <a href="mailto:jmohsa@gmail.com">jmohsa@gmail.com</a>
+                        <a href="https://x.com/mo_jafa" target="_blank" rel="noopener">@mo_jafa</a>
+                        <a href="https://linkedin.com/in/mo-jafa" target="_blank" rel="noopener">LinkedIn</a>
+                        <a href="https://github.com/mojafa" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+
+                    <div class="about-resume">
+                        <a href="https://drive.google.com/file/d/14avHkXwdPOlLqwNHyqWGL2_lPtzoYhUA/view" class="resume-btn" target="_blank" rel="noopener">View Resume (PDF) →</a>
+                    </div>
                 </div>
             </section>
         </main>
 
         <footer class="footer">
-            <p>&copy; 2025 Mo❤️. Built with curiosity and caffeine.</p>
+            <p>London · 2025</p>
         </footer>
         
-        <button class="theme-toggle" id="themeToggle">🌙</button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <svg class="theme-icon moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg class="theme-icon sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+        </button>
     </div>
 
-    <script src="goodreads-config.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

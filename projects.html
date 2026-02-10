@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — Jafa</title>
+    <meta name="description" content="Projects by Mohamed Jaafar. Financial infrastructure, prediction markets, and developer tools.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="writing.html" class="nav-link">Writing</a>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section class="page-header">
+                <h1 class="page-title">Projects</h1>
+                <p class="page-subtitle">Things I've built. Some shipped, some still cooking.</p>
+            </section>
+
+            <!-- Active -->
+            <section class="section">
+                <h2 class="section-title">Active</h2>
+                
+                <article class="project-full" id="fifi-terminal">
+                    <div class="project-full-header">
+                        <h3 class="project-full-name">Fifi Terminal</h3>
+                        <span class="project-links">
+                            <a href="https://tryfifi.com" class="project-link-btn" target="_blank" rel="noopener">tryfifi.com →</a>
+                            <a href="https://github.com/mojafa/fifi-terminal" class="project-link-btn" target="_blank" rel="noopener">GitHub →</a>
+                        </span>
+                    </div>
+                    <p class="project-full-tagline">Bloomberg for Emerging Markets</p>
+                    <p class="project-full-desc">Professional-grade financial intelligence for Africa & MENA. Real-time market data across NGX, JSE, EGX, Tadawul, ADX/DFM, and NSE. News feed with sentiment analysis and bias detection. AI research assistant. Multi-asset support: stocks, crypto, commodities, agriculture futures.</p>
+                    <div class="project-full-details">
+                        <div class="project-detail">
+                            <span class="detail-label">Stack</span>
+                            <span class="detail-value">Next.js 14, PostgreSQL, Redis, Rust (news scraper), Claude AI</span>
+                        </div>
+                        <div class="project-detail">
+                            <span class="detail-label">Markets</span>
+                            <span class="detail-value">Nigeria, South Africa, Egypt, Saudi Arabia, UAE, Kenya + Global Crypto</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-full" id="zabili">
+                    <div class="project-full-header">
+                        <h3 class="project-full-name">Zabili</h3>
+                        <span class="project-links">
+                            <a href="https://zabili.com" class="project-link-btn" target="_blank" rel="noopener">zabili.com →</a>
+                            <span class="project-status-badge">In Development</span>
+                        </span>
+                    </div>
+                    <p class="project-full-tagline">Prediction Markets Platform</p>
+                    <p class="project-full-desc">Prediction markets with a high-performance Rust CLOB (central limit order book) matching engine. On-chain settlement via Solidity smart contracts on Arbitrum L2. Built for speed, compliance, and real liquidity.</p>
+                    <div class="project-full-details">
+                        <div class="project-detail">
+                            <span class="detail-label">Stack</span>
+                            <span class="detail-value">Rust (matching engine), Next.js 14, Node.js/Express, PostgreSQL, TimescaleDB, Redis, Solidity (Foundry)</span>
+                        </div>
+                        <div class="project-detail">
+                            <span class="detail-label">Architecture</span>
+                            <span class="detail-value">CLOB matching, on-chain settlement, compliance features</span>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Shipped -->
+            <section class="section">
+                <h2 class="section-title">Shipped</h2>
+
+                <article class="project-full" id="habib">
+                    <div class="project-full-header">
+                        <h3 class="project-full-name">Habib</h3>
+                        <span class="project-status-badge shipped">Production</span>
+                    </div>
+                    <p class="project-full-tagline">Islamic Finance Ecosystem</p>
+                    <p class="project-full-desc">Unified platform for halal trading and Islamic charitable giving. Habib-Invest: Shariah-compliant investment platform. Habib-Give: Zakat calculator, charity discovery, recurring sadaqah donations. Built to make Islamic finance accessible and automated.</p>
+                    <div class="project-full-details">
+                        <div class="project-detail">
+                            <span class="detail-label">Stack</span>
+                            <span class="detail-value">Go (Gin), Flutter (iOS/Android), PostgreSQL, Redis</span>
+                        </div>
+                        <div class="project-detail">
+                            <span class="detail-label">Apps</span>
+                            <span class="detail-value">Habib Invest (trading), Habib Give (Zakat/Sadaqah), Unified Web</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-full" id="golum-screener">
+                    <div class="project-full-header">
+                        <h3 class="project-full-name">Golum Screener</h3>
+                        <span class="project-status-badge shipped">Production</span>
+                    </div>
+                    <p class="project-full-tagline">Shariah + ESG Global Screener</p>
+                    <p class="project-full-desc">Screening engine for global equities using AAOIFI and FTSE-style Shariah compliance criteria, layered with ESG (Environmental, Social, Governance) scoring. Helps Muslim investors and ethical funds make compliant decisions.</p>
+                    <div class="project-full-details">
+                        <div class="project-detail">
+                            <span class="detail-label">Stack</span>
+                            <span class="detail-value">Python, FastAPI, PostgreSQL, TimescaleDB</span>
+                        </div>
+                        <div class="project-detail">
+                            <span class="detail-label">Criteria</span>
+                            <span class="detail-value">AAOIFI compliance, FTSE-style screening, ESG overlay</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-full" id="golum-business">
+                    <div class="project-full-header">
+                        <h3 class="project-full-name">Golum Business</h3>
+                        <span class="project-status-badge">Prototype</span>
+                    </div>
+                    <p class="project-full-tagline">Privacy-First Business Operating Account</p>
+                    <p class="project-full-desc">USDC-based business banking. Invoice clients, pay suppliers, run payroll — all with M-Pesa and bank off-ramps. Built with privacy features and non-custodial wallet integration via Privy.</p>
+                    <div class="project-full-details">
+                        <div class="project-detail">
+                            <span class="detail-label">Stack</span>
+                            <span class="detail-value">Go (Chi), Next.js 14, PostgreSQL, Redis, Privy (wallets), Kotani Pay</span>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Past Work -->
+            <section class="section">
+                <h2 class="section-title">Professional Work</h2>
+                <div class="work-history">
+                    <div class="work-item">
+                        <h3>Fingo Africa</h3>
+                        <p>Led Cards, Auth, and AI microservices. Built personalized support bot. 99.9% uptime on payment rails. Data dashboards with 100+ KPIs. Integrations across KYC/KYB, card processors, open-banking.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>London · 2025</p>
+        </footer>
+        
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <svg class="theme-icon moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg class="theme-icon sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

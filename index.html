@@ -3,57 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jafa</title>
+    <title>Jafa — Builder, Writer</title>
+    <meta name="description" content="Mohamed Jaafar. Building ethical finance infrastructure. Writing about systems, identity, and building in public.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <h1 class="name">Mohamed Jaafar</h1>
             <nav class="nav">
                 <a href="index.html" class="nav-link active">Home</a>
                 <a href="about.html" class="nav-link">About</a>
-                <a href="https://x.com/mo_jafa" class="nav-link" target="_blank" rel="noopener noreferrer">Twitter</a>
-                <a href="mailto:jmohsa@gmail.com" class="nav-link">Email</a>
-                <a href="https://www.linkedin.com/in/mo-jafa/" class="nav-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://github.com/mojafa" class="nav-link" target="_blank" rel="noopener noreferrer">Github</a>
-                <a href="https://goodreads.com/jafaa" class="nav-link" target="_blank" rel="noopener noreferrer">Goodreads</a>
-                <a href="https://tryfifi.com/invest" class="nav-link" target="_blank" rel="noopener noreferrer">Fifi</a>
-                <a href="https://paragon-web-production.up.railway.app/" class="nav-link" target="_blank" rel="noopener noreferrer">Paragon Terminal</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="writing.html" class="nav-link">Writing</a>
             </nav>
         </header>
 
         <main class="main">
-            <!-- Essays Section -->
-            <section id="essays" class="section">
-                <h2 class="section-title">Essays:</h2>
-                <ul class="essays-list">
-                    <li><a href="lukewarm.html" class="essay-link">The Lukewarm way of living</a></li>
-                    <li><a href="dichotomy.html" class="essay-link">The Dichotomy of Understanding (As Another)</a></li>
-                    <li><a href="urgency.html" class="essay-link">On urgency</a></li>
-                    <li><a href="paying-interest.html" class="essay-link">Paying Interest on Time</a></li>
-                    <li><a href="commitment-multiplier.html" class="essay-link">Commitment Multiplier</a></li>
-                    <li><a href="stillness-is-dead.html" class="essay-link">Stillness is Dead</a></li>
-                    <li><a href="slowing-down.html" class="essay-link">Slowing Down is not Burn</a></li>
-                    <li><a href="ai-engineer.html" class="essay-link">Am I an AI Engineer?</a></li>
-                    <li><a href="data-engineer.html" class="essay-link">Am I a Data Engineer?</a></li>
-                    <li><a href="what-am-i.html" class="essay-link">What am I?</a></li>
-                    <li><a href="specialisation.html" class="essay-link">Specialisation is for Insects</a></li>
+            <!-- Hero Section -->
+            <section class="hero">
+                <h1 class="hero-name">Mohamed Jaafar</h1>
+                <p class="hero-tagline">I build financial infrastructure for people who got left out.</p>
+                <p class="hero-context">Currently: MSc Financial Technology in London, building <a href="https://tryfifi.com" class="inline-link">Fifi Terminal</a> — a Bloomberg for emerging markets.</p>
+            </section>
+
+            <!-- The Story (brief) -->
+            <section class="story">
+                <p>I grew up watching people I knew get excluded from financial systems — no credit history, no access, no visibility. I started trading forex at 18, got wrecked, learned, and eventually found my way to building the tools I wished existed.</p>
+                <p>I've shipped payments rails at <strong>Fingo Africa</strong>, designed microservices for digital banks, and built everything from card systems to AI support bots. Now I'm focused on ethical finance — Shariah-compliant, transparent, accessible.</p>
+                <p>I write to think. Mostly about <a href="writing.html" class="inline-link">systems, identity, and what it means to build</a>.</p>
+            </section>
+
+            <!-- Projects (featured) -->
+            <section class="section">
+                <h2 class="section-title">Building</h2>
+                <div class="projects-featured">
+                    <a href="https://tryfifi.com" class="project-card" target="_blank" rel="noopener">
+                        <div class="project-header">
+                            <span class="project-name">Fifi Terminal</span>
+                            <span class="project-status">Active</span>
+                        </div>
+                        <p class="project-desc">Bloomberg for emerging markets. Real-time data, news sentiment, AI research — for Africa & MENA.</p>
+                        <span class="project-tech">Next.js · PostgreSQL · Rust · AI</span>
+                    </a>
+                    <a href="https://zabili.com" class="project-card" target="_blank" rel="noopener">
+                        <div class="project-header">
+                            <span class="project-name">Zabili</span>
+                            <span class="project-status">Building</span>
+                        </div>
+                        <p class="project-desc">Prediction markets with a Rust CLOB matching engine. On-chain settlement on Arbitrum.</p>
+                        <span class="project-tech">Rust · Next.js · Solidity · TimescaleDB</span>
+                    </a>
+                </div>
+                <a href="projects.html" class="see-all-link">See all projects →</a>
+            </section>
+
+            <!-- Writing (featured) -->
+            <section class="section">
+                <h2 class="section-title">Writing</h2>
+                <ul class="writing-list">
+                    <li><a href="specialisation.html" class="writing-link">Specialisation is for Insects</a></li>
+                    <li><a href="paying-interest.html" class="writing-link">Paying Interest on Time</a></li>
+                    <li><a href="commitment-multiplier.html" class="writing-link">The Commitment Multiplier</a></li>
+                    <li><a href="stillness-is-dead.html" class="writing-link">Stillness is Dead</a></li>
+                    <li><a href="what-am-i.html" class="writing-link">What am I?</a></li>
                 </ul>
+                <div class="writing-links">
+                    <a href="writing.html" class="see-all-link">All essays →</a>
+                    <a href="https://substack.com/@mojafa" class="see-all-link" target="_blank" rel="noopener">Substack →</a>
+                </div>
+            </section>
+
+            <!-- Connect -->
+            <section class="section">
+                <h2 class="section-title">Connect</h2>
+                <div class="connect-links">
+                    <a href="https://x.com/chakobss" target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://github.com/mojafa" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://linkedin.com/in/mo-jafa" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://goodreads.com/jafaa" target="_blank" rel="noopener">Goodreads</a>
+                    <a href="mailto:jmohsa@gmail.com">Email</a>
+                </div>
             </section>
         </main>
 
         <footer class="footer">
-            <p>&copy; 2025 Mo❤️. Built with curiosity and caffeine.</p>
+            <p>London · 2025</p>
         </footer>
         
-        <button class="theme-toggle" id="themeToggle">🌙</button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <svg class="theme-icon moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg class="theme-icon sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+        </button>
     </div>
 
-    <script src="goodreads-config.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

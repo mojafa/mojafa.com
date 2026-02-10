@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing — Jafa</title>
+    <meta name="description" content="Essays by Mohamed Jaafar on systems thinking, professional identity, and building in public.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="writing.html" class="nav-link active">Writing</a>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section class="page-header">
+                <h1 class="page-title">Writing</h1>
+                <p class="page-subtitle">I write to think. Essays on systems, identity, and building things that matter.</p>
+                <a href="https://substack.com/@mojafa" class="substack-cta" target="_blank" rel="noopener">
+                    Subscribe on Substack →
+                </a>
+            </section>
+
+            <!-- Identity & Craft -->
+            <section class="section">
+                <h2 class="section-title">On Identity & Craft</h2>
+                <p class="section-intro">What does it mean to be a builder? How do you define yourself when the labels don't fit?</p>
+                <ul class="writing-list-full">
+                    <li>
+                        <a href="specialisation.html" class="writing-item">
+                            <span class="writing-title">Specialisation is for Insects</span>
+                            <span class="writing-preview">Why I refuse to pick one lane. The case for being T-shaped, curious, and dangerous.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="what-am-i.html" class="writing-item">
+                            <span class="writing-title">What am I?</span>
+                            <span class="writing-preview">Backend engineer? Product person? Founder? The identity crisis of building across domains.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="ai-engineer.html" class="writing-item">
+                            <span class="writing-title">Am I an AI Engineer?</span>
+                            <span class="writing-preview">Exploring the new category and whether it fits.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="data-engineer.html" class="writing-item">
+                            <span class="writing-title">Am I a Data Engineer?</span>
+                            <span class="writing-preview">Pipelines, dashboards, and the truth about data work.</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Systems & Productivity -->
+            <section class="section">
+                <h2 class="section-title">On Systems & Productivity</h2>
+                <p class="section-intro">How to think about time, commitment, and getting things done without burning out.</p>
+                <ul class="writing-list-full">
+                    <li>
+                        <a href="paying-interest.html" class="writing-item">
+                            <span class="writing-title">Paying Interest on Time</span>
+                            <span class="writing-preview">Delayed decisions compound. The hidden cost of putting things off.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="commitment-multiplier.html" class="writing-item">
+                            <span class="writing-title">The Commitment Multiplier</span>
+                            <span class="writing-preview">Why full commitment beats hedged bets. The math of going all in.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="lukewarm.html" class="writing-item">
+                            <span class="writing-title">The Lukewarm Way of Living</span>
+                            <span class="writing-preview">Against mediocrity. Why half-measures produce worse outcomes than doing nothing.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="urgency.html" class="writing-item">
+                            <span class="writing-title">On Urgency</span>
+                            <span class="writing-preview">The difference between panic and purpose. When speed matters.</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Philosophy -->
+            <section class="section">
+                <h2 class="section-title">On Philosophy</h2>
+                <p class="section-intro">Deeper dives into meaning, understanding, and the nature of work.</p>
+                <ul class="writing-list-full">
+                    <li>
+                        <a href="stillness-is-dead.html" class="writing-item">
+                            <span class="writing-title">Stillness is Dead</span>
+                            <span class="writing-preview">Motion as life. Why rest isn't stillness — and what that means for how we work.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="slowing-down.html" class="writing-item">
+                            <span class="writing-title">Slowing Down is not Burn</span>
+                            <span class="writing-preview">The difference between strategic deceleration and burnout.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dichotomy.html" class="writing-item">
+                            <span class="writing-title">The Dichotomy of Understanding (As Another)</span>
+                            <span class="writing-preview">On empathy, perspective, and the limits of knowing someone else's experience.</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Currently Reading -->
+            <section class="section" id="reading">
+                <h2 class="section-title">Currently Reading</h2>
+                <p class="section-intro">Books shaping my thinking. Synced from <a href="https://goodreads.com/jafaa" class="inline-link" target="_blank" rel="noopener">Goodreads</a>.</p>
+                <div class="books-grid" id="booksGrid">
+                    <div class="book-placeholder">Loading books...</div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>London · 2025</p>
+        </footer>
+        
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <svg class="theme-icon moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg class="theme-icon sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+        </button>
+    </div>
+
+    <script src="goodreads-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
